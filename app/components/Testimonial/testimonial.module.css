@@ -1,0 +1,498 @@
+/* testimonial section */
+.testimonialSection {
+    font-family: "Sora", sans-serif;
+    padding: 4rem 1rem 6rem;
+    background-color: white;
+    background-image: url("/assets/Group\ 1321314607.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .testimonialSection::before,
+.testimonialSection::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+    background-image: url("/assets/Group\ 1321314607.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
+    z-index: 0;
+} */
+
+.testimonialContentWrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #134a8e;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.sectionHeader p {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 140%;
+    margin: 0;
+}
+
+.carouselContainer {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    height: 436px;
+}
+
+.testimonialCard {
+    background-color: transparent;
+    border-radius: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    height: 108%;
+}
+
+.imageCard {
+    width: 40%;
+    flex-shrink: 0;
+    padding: 10px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #134a8e;
+    display: flex;
+    flex-direction: column;
+}
+
+.quoteCard {
+    width: 55%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.quoteTextWrapper {
+    flex: 1 1 auto;
+    background-color: #fcfcfc;
+    border: 1px solid #27a9e1;
+    border-radius: 24px;
+    padding: 1.5rem 2.2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px 0px #134a8e29;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 330px;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    flex: 1;
+}
+
+.patientImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: transform 0.5s ease-out;
+}
+
+.patientInfo {
+    text-align: center;
+    padding: 0.75rem 0 0;
+    background-color: transparent;
+    position: static;
+    z-index: 1;
+}
+
+.patientName {
+    font-size: 25px;
+    font-weight: 700;
+    color: #134a8e;
+    line-height: 130%;
+}
+
+.patientLocation {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.quoteIcon {
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 900;
+    color: #134a8e;
+    z-index: 0;
+}
+
+.quoteStart {
+    top: -1rem;
+}
+
+.quoteEnd {
+    bottom: 1rem;
+    right: 6.5rem;
+}
+
+.mobileQuote {
+    display: none;
+}
+
+.patientQuote {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6b7280;
+    position: relative;
+    z-index: 1;
+    margin: 2rem 0;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    top: 50px;
+}
+
+.quoteTransitionContainer {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carouselControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 60px;
+    padding-top: 0px;
+    flex-shrink: 0;
+}
+
+.navArrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #27a9e133;
+    color: #27a9e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navArrow:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.navArrow.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.navArrow.disabled:hover {
+    background-color: white;
+    color: #1a73e8;
+}
+
+.navArrow img {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2;
+}
+
+.paginationDots {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 2rem;
+    border-radius: 200px;
+    background: #27a9e11a;
+    padding: 12px 28px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #27a9e1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 20%;
+}
+
+.dot.active {
+    background-color: #27a9e1;
+    width: 12px;
+    height: 12px;
+    opacity: 100%;
+}
+
+.slideContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.slideContent.activeQuote {
+    position: relative;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 10;
+}
+
+.slideEnterRight {
+    transform: translateX(100%);
+}
+
+.slideEnterLeft {
+    transform: translateX(-100%);
+}
+
+.slideLeaveRight {
+    transform: translateX(100%);
+}
+
+.slideLeaveLeft {
+    transform: translateX(-100%);
+}
+
+.imageTransitionContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slideImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: all 0.5s ease-in-out;
+}
+
+.slideImage.activeImage {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.slideImage.activeInfo {
+    z-index: 10;
+}
+
+.slideImage.activeInfo .patientInfo {
+    opacity: 1;
+}
+
+.slideImage .patientInfo {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .carouselContainer {
+        flex-direction: column;
+        gap: 1.5rem;
+        height: auto;
+    }
+
+    .imageCard,
+    .quoteCard {
+        width: 100%;
+        flex-shrink: unset;
+        flex-basis: auto;
+    }
+
+    .imageCard {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #134A8E;
+    }
+
+    .imageContainer {
+        height: 220px;
+        flex: 0 0 auto;
+    }
+
+    .imageTransitionContainer {
+        height: 220px;
+    }
+
+    /* .quoteCard {
+        padding: 1rem;
+    } */
+
+    .patientQuote {
+        font-size: 1.1rem;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+    }
+
+    .carouselControls {
+        border-top: none;
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+
+    .quoteStart {
+        font-size: 4rem;
+        top: 0;
+        left: 0.5rem;
+    }
+
+    .quoteEnd {
+        font-size: 4rem;
+        bottom: 0;
+        right: 0.5rem;
+    }
+
+    .quoteTextWrapper {
+        flex: 0 0 auto;
+        min-height: unset;
+        justify-content: flex-start;
+        height: auto;
+        margin: 0;
+    }
+
+    .quoteTransitionContainer {
+        flex: 0 0 auto;
+        overflow: visible;
+    }
+
+    .patientQuote {
+        display: block;
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        overflow: visible;
+        margin: 1rem 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .quoteIcon {
+        color: black;
+    }
+
+    .quoteIcon .quoteM .quote {
+        width: 30px;
+        height: 24px;
+    }
+
+    .testimonialSection {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .carouselContainer {
+        padding: 0px;
+    }
+
+    .sectionHeader{
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+    .sectionHeader p {
+        font-size: 14px;
+        color: #6B7280;
+    }
+
+    .sectionHeader p br {
+        display: none;
+    }
+
+    .sectionHeader h2 {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .patientName{
+        font-size: 20px;
+        color: #000;
+    }
+    .patientLocation{
+        font-size: 14px;
+        color: #000;
+    }
+    .quoteTextWrapper {
+        padding: 4rem 14px;
+    }
+
+    .testimonialSection .quoteTransitionContainer {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .testimonialSection .patientQuote {
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    .testimonialSection .quoteStart {
+        top: -20px;
+        left: 16px;
+    }
+
+    .testimonialSection .quoteEnd {
+        bottom: 0.5rem;
+        right: 40px;
+    }
+
+    .desktopQuote {
+        display: none;
+    }
+
+    .mobileQuote {
+        display: block;
+    }
+}

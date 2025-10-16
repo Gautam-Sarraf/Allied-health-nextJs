@@ -1,0 +1,17 @@
+/* app/components/HeaderHeroWrapper/HeaderHeroWrapper.module.css */
+.wrapper {
+  background: url('/assets/Frame\ 3042773.png')no-repeat center center;
+  background-size: 86% 124%;
+  /* background-attachment: fixed;  */
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    margin-top: -30px;
+    background: url(/assets/mobile-bg.png) no-repeat center center;
+    background-size: 90% 100%;
+  }
+}

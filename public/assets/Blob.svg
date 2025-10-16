@@ -1,0 +1,11 @@
+<svg width="267" height="319" viewBox="0 0 267 319" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<ellipse cx="222.402" cy="240.572" rx="91.9" ry="94.31" transform="rotate(-9.3207 222.402 240.572)" fill="#27A9E1"/>
+<ellipse cx="280.774" cy="323.031" rx="91.9" ry="94.31" transform="rotate(-9.3207 280.774 323.031)" fill="#134A8E"/>
+<ellipse cx="296.56" cy="224.868" rx="91.9" ry="94.31" transform="rotate(-9.3207 296.56 224.868)" fill="#2D5BFF"/>
+<foreignObject x="-65.9816" y="-66.5343" width="643.966" height="654.985"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(50px);clip-path:url(#bgblur_0_319_5564_clip_path);height:100%;width:100%"></div></foreignObject><ellipse data-figma-bg-blur-radius="100" cx="256.001" cy="260.958" rx="221.793" ry="227.61" transform="rotate(-9.3207 256.001 260.958)" fill="white" fill-opacity="0.79"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_319_5564_clip_path" transform="translate(65.9816 66.5343)"><ellipse cx="256.001" cy="260.958" rx="221.793" ry="227.61" transform="rotate(-9.3207 256.001 260.958)"/>
+</clipPath></defs>
+</svg>

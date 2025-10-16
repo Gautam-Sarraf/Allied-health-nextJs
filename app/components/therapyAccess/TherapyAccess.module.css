@@ -1,0 +1,158 @@
+/* Section styles */
+.therapyAccessSection {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* <-- changed from center */
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  position: relative; /* keep this for inner absolute positioning if needed */
+}
+
+.therapyAccessBackground {
+  position: relative;
+  top: -130px; /* or remove top if you prefer */
+  background-image: url("/assets/globale CTA.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2.5rem;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1064px;
+  width: 100%;
+}
+
+/* Main heading style */
+.therapyAccessTitle {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Subheading style */
+.therapyAccessSubtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin: 0 0 2.5rem 0;
+}
+
+/* Container for the buttons */
+.therapyAccessButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Shared button styles */
+.therapyAccessBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  /* Pill shape */
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Inlined SVGs are targeted directly inside the button */
+.therapyAccessBtn svg {
+  transition: transform 0.4s ease;
+}
+
+.therapyAccessBtn:hover svg {
+  transform: rotate(45deg);
+}
+
+/* Specific style for the "Email Us" button */
+.therapyBtnPrimary {
+  background-color: white;
+  color: #27a9e1;
+}
+
+.therapyBtnPrimary:hover {
+  background-color: #f0f0f0;
+}
+
+/* Specific style for the "Call Us" button */
+.therapyBtnOutline {
+  background-color: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.therapyBtnOutline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .therapyAccessBackground {
+    padding: 4rem 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .therapyAccessTitle {
+    font-size: 1.875rem;
+  }
+
+  .therapyAccessSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .therapyAccessSection {
+    padding: 1rem;
+  }
+
+  .therapyAccessBackground {
+    top: -6rem;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+  }
+
+  .therapyAccessTitle {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .therapyAccessSubtitle {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .therapyAccessButtons {
+    flex-direction: row;
+    width: 100%;
+    max-width: 253px;
+    gap: 5px;
+  }
+
+  .therapyAccessBtn {
+    justify-content: center;
+    font-size: 12px;
+    padding: 6px 15px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    max-width: 125px;
+    width: 100%;
+  }
+}

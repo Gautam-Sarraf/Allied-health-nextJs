@@ -1,0 +1,355 @@
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Sora', sans-serif;
+}
+
+.topBar {
+    background-color: #1a4d8c;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Vertical padding is kept, horizontal is now handled by .container */
+.topBarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 100%;
+}
+
+.socialLinks a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.socialLinks a:hover {
+    opacity: 1;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contactInfo a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.contactInfo img {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.separator {
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 20px;
+}
+
+.siteHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 30px 0px #00000014;
+    background: #ffffff;
+}
+
+.mainNavWrapper {
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Vertical padding is kept, horizontal is now handled by .container */
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    width: 100%;
+}
+
+.logo {
+    line-height: 1;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.logoImage {
+    height: 65px;
+    width: auto;
+    display: block;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.navLinks li a {
+    display: inline-block;
+    position: relative;
+    color: #334155;
+    font-size: 14px;
+    padding: 5px 0;
+    transition: color 0.2s;
+    white-space: nowrap;
+    -webkit-text-stroke: 0px transparent;
+}
+
+/* .navLinks li a::after {
+  content: attr(data-text);
+  font-weight: 600;
+  visibility: hidden;
+  height: 0;
+  display: block;
+  overflow: hidden;
+} */
+
+.navLinks li a:hover {
+    color: #134A8E;
+    -webkit-text-stroke: 0.4px #134A8E;
+}
+
+.navLinks li a.active,
+.mobileNavLinks li a.active {
+    color: #134A8E;
+    -webkit-text-stroke: 0.4px #134A8E;
+}
+
+.enquiryBtn {
+    background-color: #27A9E1;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 18px 20px;
+    border-radius: 100px;
+    white-space: nowrap;
+    align-items: center;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+.enquiryBtn img {
+    margin-left: 20px;
+    transition: transform 0.5s;
+}
+
+.enquiryBtn:hover img {
+    transform: rotate(45deg);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 3px 0;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.hamburger .bar:last-child {
+    width: 13px;
+}
+
+.mobileNavMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+    display: block;
+}
+
+.mobileNavMenu.isOpen {
+    transform: translateX(0);
+}
+
+.mobileLogo {
+    padding: 0 30px 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobileLogo .logoImage {
+    height: 45px;
+}
+
+.mobileNavLinks {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.mobileNavLinks li a {
+    display: block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.mobileNavLinks li a:hover {
+    background-color: #f7f7f7;
+}
+
+.mobileEnquiryBtn {
+    display: none;
+    margin: 20px 30px 0 30px;
+    text-align: center;
+    background-color: #34b7e1;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.menuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    transition: opacity 0.3s;
+}
+
+.menuOverlay.isOpen {
+    display: block;
+    opacity: 1;
+}
+
+.phnEnquiryBtn {
+    display: none;
+}
+
+/* --- Responsive Styles --- */
+
+@media (min-width: 1100px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navLinks {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+    .enquiryBtn {
+        margin-left: 20px;
+        order: 3;
+    }
+    .mainNav {
+        /* This padding is now handled by the container */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: space-between;
+    }
+    .logoImage {
+        height: 55px;
+    }
+}
+
+@media (max-width: 680px) {
+    .socialLinks {
+        display: none;
+    }
+    .enquiryBtn {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .topBarContent {
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+    .contactInfo {
+        font-size: 11px;
+    }
+    .contactInfo a {
+        margin-bottom: 5px;
+    }
+    .enquiryBtn.hideBtn {
+        display: none;
+    }
+    .mobileEnquiryBtn {
+        display: block;
+    }
+    .logoImage {
+        height: 40px;
+    }
+    .phnEnquiryBtn {
+       display: block;
+       margin-left: 20px !important;
+       width: 70%;
+    }
+}
+
+@media (max-width: 390px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .separator {
+        margin: 0px 5px;
+    }
+}
